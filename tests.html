@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+    <style>
+      div {
+        background-color: rgb(42, 165, 108);
+      }
+      span {
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      DIV SHOULD BE GREEN. WEB-COMPONENT SHOULD NOT BE POLLUTED WITH GLOBAL
+      STYLES
+    </div>
+    <span>THIS SHOULD BE PURPLE. WEB-COMPONENT SHOULD NOT BE POLLUTED WITH
+      GLOBAL STYLES</span>
+    <pu-welcome message="this is my new message2" styleSheets="/dist/lib/welcome.css" />
+    <script type="module" src="/dist/lib/welcome.es.js"></script>
+  </body>
+</html>
